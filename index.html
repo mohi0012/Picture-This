@@ -16,22 +16,17 @@
       <h4>My Really Cool Blog Post</h4>
     </div>
 
-    <picture>
-      <source
-          media="(min-width:640px)"
-          srcset="images/museum.jpg">
+<picture>
+  <source srcset="images/museum-landscape-960.jpg,
+                  images/museum-landscape-1920.jpg 2x,
+                  images/museum-landscape-2880.jpg 3x"
+          media="(max-width: 960px)"/>
 
-      <source 
-          media="(min-width:480px)"
-          srcset="images/museum.jpg">
-      
-      <source 
-          media="(min-width: 320px)"
-          srcset="images/museum.jpg">
-      
-      <source srcset="images/museum.jpg">
-
-    </picture>
+  <source srcset="images/museum-square-480.jpg,
+                  images/museum-square-960.jpg 2x,
+                  images/museum-square-1440.jpg 3x"
+          media="(min-width: 960px)" />
+</picture>
 
     <img class="orig-img" src="images/museum.jpg" alt="placeholder">
 
